@@ -68,10 +68,10 @@ const Login: React.FC = () => {
           <div className="form-group">
             <label htmlFor="email">Email Address</label>
             <div style={{ position: 'relative' }}>
-              <Mail 
+              {/* <Mail 
                 size={18} 
                 style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)', color: '#9ca3af', zIndex: 1 }} 
-              />
+              /> */}
               <input
                 id="email"
                 type="email"
@@ -86,10 +86,10 @@ const Login: React.FC = () => {
           <div className="form-group">
             <label htmlFor="password">Password</label>
             <div style={{ position: 'relative' }}>
-              <Lock 
+              {/* <Lock 
                 size={18} 
                 style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)', color: '#9ca3af', zIndex: 1 }} 
-              />
+              /> */}
               <input
                 id="password"
                 type={showPassword ? "text" : "password"}
@@ -134,7 +134,10 @@ const Login: React.FC = () => {
 
           <br />
           
-          <button type="button" className="btn btn-secondary" onClick={() => navigate('/register')}>
+          <button type="button"
+           className="btn btn-secondary"
+           style={{marginTop: "10px"}}
+           onClick={() => navigate('/register')}>
             Register
           </button>
         </form>

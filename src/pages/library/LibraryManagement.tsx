@@ -19,7 +19,7 @@ const LibraryManagement: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [items, setItems] = useState<any[]>([]);
   const [categories, setCategories] = useState<any[]>([]);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');   
 
   useEffect(() => {
     fetchCategories();

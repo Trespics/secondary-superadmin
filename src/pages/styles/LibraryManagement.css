@@ -347,3 +347,91 @@
   font-size: 0.75rem;
   font-weight: 600;
 }
+
+/* Upload Styles */
+.input-with-upload {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-with-upload input {
+  flex: 1;
+}
+
+.upload-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #475569;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.upload-btn:hover:not(:disabled) {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+.upload-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.upload-progress {
+  font-size: 0.75rem;
+  color: #3b82f6;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* Enhanced Form Styles */
+.modal-content.wide-modal {
+  max-width: 800px;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.form-section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.authors-checklist {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.authors-checklist label:hover {
+  background: #f1f5f9;
+}
+
+.section-item, .citation-item {
+  transition: all 0.2s;
+}
+
+.section-item:hover {
+  border-color: #3b82f6;
+}
+
+.item-form input, .item-form select, .item-form textarea {
+  width: 100%;
+}

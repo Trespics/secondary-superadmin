@@ -15,7 +15,6 @@ interface LibraryItemFormProps {
 
 const LibraryItemForm: React.FC<LibraryItemFormProps> = ({ isOpen, onClose, type, categories, item, onSuccess }) => {
   const [loading, setLoading] = useState(false);
-  const [fetchingMetadata, setFetchingMetadata] = useState(false);
   const [uploadingField, setUploadingField] = useState<string | null>(null);
   
 
@@ -48,12 +47,6 @@ const LibraryItemForm: React.FC<LibraryItemFormProps> = ({ isOpen, onClose, type
     citations: []
   });
 
-  useEffect(() => {
-    if (isOpen) {
-      // No metadata to fetch currently
-      setFetchingMetadata(false);
-    }
-  }, [isOpen]);
 
   useEffect(() => {
     if (item) {

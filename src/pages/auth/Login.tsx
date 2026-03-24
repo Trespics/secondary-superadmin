@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import api from '../../lib/api';
-import { Lock, Mail, Loader2, ShieldCheck, Fingerprint, Eye, EyeOff } from 'lucide-react';
+import { Loader2, ShieldCheck, Fingerprint, Eye, EyeOff } from 'lucide-react';
 import { toast } from 'sonner';
 import '../styles/Login.css'; // Import the CSS file
 

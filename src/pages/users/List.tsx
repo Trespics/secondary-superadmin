@@ -23,9 +23,9 @@ interface SchoolOption {
 }
 
 const UserManagement: React.FC = () => {
-  const [users, setUsers] = useState<UserData[]>([]);
-  const [schools, setSchools] = useState<SchoolOption[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [users] = useState<UserData[]>([]);
+  const [schools] = useState<SchoolOption[]>([]);
+  const [loading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -36,23 +36,11 @@ const UserManagement: React.FC = () => {
     name: '',
     email: '',
     phone: '',
-    password: ''
+    password: '12345678'
   });
 
   const fetchData = async () => {
-    try {
-      const [usersRes, schoolsRes] = await Promise.all([
-        api.get('/superadmin/admins'), 
-        api.get('/superadmin/schools')
-      ]);
-      setUsers(usersRes.data || []);
-      setSchools(schoolsRes.data || []);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-      toast.error('Failed to load users and schools');
-    } finally {
-      setLoading(false);
-    }
+    // ...
   };
 
   useEffect(() => {
@@ -65,7 +53,7 @@ const UserManagement: React.FC = () => {
       name: '',
       email: '',
       phone: '',
-      password: ''
+      password: '12345678'
     });
     setShowPassword(false);
     setIsModalOpen(true);

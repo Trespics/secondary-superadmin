@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Loader2, Upload, Plus, Trash2, BookOpen, FileText, Video, Music, File, Shield, CheckCircle } from 'lucide-react';
+import { X, Loader2, Upload, Plus, Trash2, BookOpen, FileText, Video, Music, CheckCircle } from 'lucide-react';
 import api from '../../lib/api';
 import { toast } from 'sonner';
 import '../../pages/styles/LibraryItemForm.css'; 
